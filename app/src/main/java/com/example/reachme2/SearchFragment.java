@@ -68,14 +68,29 @@ public class SearchFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_search, container, false);
 
         //list of items
-        List<itemlistsearch> itemListse = new ArrayList<>();
-        itemListse.add(new itemlistsearch("computer ","a"));
-        itemListse.add(new itemlistsearch("book","b"));
-        itemListse.add(new itemlistsearch("portable ","c"));
+        List<HighTechItem> itemListse = new ArrayList<>();
+        itemListse.add(new HighTechItem("Computer/Information Technology","computer"));
+        itemListse.add(new HighTechItem("Accounting/Finance","finance"));
+        itemListse.add(new HighTechItem("Admin/Human Ressources","admin"));
+        itemListse.add(new HighTechItem("Building/Construction","building"));
+        itemListse.add(new HighTechItem("Arts/Media/Communication","media"));
+        itemListse.add(new HighTechItem("Education/Training","education"));
+        itemListse.add(new HighTechItem("Enginnering","engineering"));
+        itemListse.add(new HighTechItem("Hotel/Restaurant","hotel"));
+        itemListse.add(new HighTechItem("Sciences","sciences"));
+        itemListse.add(new HighTechItem("Healthcare","health"));
+        itemListse.add(new HighTechItem("Sales/Marketing","marketing"));
+        itemListse.add(new HighTechItem("Manufacturing","manufacturing"));
+
+
+
+
+
+
 
         //get list view
         ListView listview = rootView.findViewById(R.id.searlist);
-        listview.setAdapter(new gridAdapter(getContext(),itemListse));
+        listview.setAdapter(new HighTechItemAdapter(getContext(),itemListse));
 
         return rootView;
     }
