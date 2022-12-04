@@ -78,9 +78,19 @@ public class ProfileFragment extends Fragment implements View.OnClickListener  {
         List<WorkExperienceItem> workExperienceList = new ArrayList<>();
         workExperienceList.add(new WorkExperienceItem("fullstack dev"));
         workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
+        workExperienceList.add(new WorkExperienceItem("backend dev"));
 
 
-        ListView workExperienceListView = v.findViewById(R.id.work_experience_list_view);
+
+        ListView workExperienceListView = (ListView) v.findViewById(R.id.work_experience_list_view);
         workExperienceListView.setAdapter( new WorkExperienceAdapter(getContext(),workExperienceList));
         // Inflate the layout for this fragment
 
