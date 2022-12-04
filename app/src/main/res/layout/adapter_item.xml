@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/oif"
+        android:layout_marginTop="-25dp"
+        />
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="122dp"
+        android:src="@drawable/enterprise"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Software Principle Enginner"
+        />
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="Software Principle Enginner description description description description"
+        />
+
+
+</LinearLayout>

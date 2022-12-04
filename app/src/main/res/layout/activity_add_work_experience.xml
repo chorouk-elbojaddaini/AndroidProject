@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/light_gray"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_bottom_large"
+                    >
+
+                    <TextView
+                        android:id="@+id/cancelWorkExp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Cancel"
+                        android:textColor="@color/pumpkin"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-125dp"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/darkBlue"
+                        android:text="Work Experience"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="-140dp"
+                        android:fontFamily="@font/robotobold"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_grey3"
+                        android:text="Save"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_bottom"
+                    >
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-4dp"
+                        android:background="@null"
+                        android:fontFamily="@font/robotobold"
+
+                        android:hint="Job Title"
+                        android:textColor="@color/black3"
+                        android:textSize="14dp"></EditText>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border_bottom"
+                >
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:hint="Company Name"
+                    android:textSize="14dp"
+                    android:textColorHint="@color/black3"
+                    android:layout_marginTop="-4dp"
+
+                    android:fontFamily="@font/robotobold"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    ></EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/border_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialization"
+                    android:textSize="15dp"
+                    android:textColor="@color/black3"
+                    android:fontFamily="@font/robotobold"
+
+                />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="-4dp"
+                    android:background="@null"
+                    android:fontFamily="@font/robotobold"
+
+                    android:hint="Select Specialization"
+                    android:textColor="@color/black3"
+                    android:textSize="14dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Industry"
+                    android:textSize="15dp"
+                    android:textColor="@color/black3"
+                    android:fontFamily="@font/robotobold"
+
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:hint="Select Industry"
+                    android:textSize="14dp"
+                    android:textColor="@color/black3"
+                    android:layout_marginTop="-4dp"
+
+                    android:fontFamily="@font/robotobold"
+                    android:background="@null"
+                    android:layout_marginLeft="0dp"
+                    ></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position Level"
+                    android:textSize="15dp"
+                    android:textColor="@color/black3"
+                    android:fontFamily="@font/robotobold"
+
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:hint="Select Specialization"
+                    android:textSize="14dp"
+                    android:textColor="@color/black3"
+                    android:layout_marginTop="-4dp"
+
+                    android:fontFamily="@font/robotobold"
+                    android:background="@null"
+                    android:layout_marginLeft="0dp"
+                    ></EditText>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/black3"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="November 2022"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/dark_grey2"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/robotoreg"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_arrow_right"
+                            android:layout_marginRight="0dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/black3"
+                    android:layout_marginLeft="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="November 2022"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/dark_grey2"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/robotoreg"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_arrow_right"
+                        android:layout_marginRight="0dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom"
+
+
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="I currently work here"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/black3"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+                    <CheckBox android:id="@+id/checkbox_meat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="30dp"
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:hint="Job description"
+                android:textSize="14dp"
+                android:textColor="@color/black3"
+                android:layout_marginTop="-120dp"
+
+                android:fontFamily="@font/robotobold"
+                android:background="@null"
+                android:layout_marginLeft="0dp"
+                ></EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

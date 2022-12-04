@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+
+           <SearchView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:queryHint="What kind of job are you looking for ?"
+               android:iconifiedByDefault="false"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginTop="16dp"
+               android:layout_marginBottom="16dp"
+               android:background="@drawable/searchviewbackg"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Specializations"
+           android:textSize="20dp"
+           android:layout_marginLeft="15dp"
+
+
+
+           />
+       <GridView
+           android:id="@+id/searlist"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="15dp"
+           android:layout_marginEnd="15dp"
+           android:numColumns="auto_fit"
+           >
+
+       </GridView>
+   </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLanguages"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:background="@drawable/border_bottom_large"
+
+        >
+
+        <TextView
+            android:id="@+id/cancelLanguages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotobold"
+            android:text="Cancel"
+            android:textColor="@color/pumpkin"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-130dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Languages"
+            android:textColor="@color/darkBlue"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/addLangugelink"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+
+        android:fontFamily="@font/robotobold"
+        android:textColor="@color/darkBlue"
+        android:textSize="15dp"
+        android:text="Add language"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/robotobold"
+        android:textColor="@color/dark_grey2"
+        android:text="Maximum number of languages:5"/>
+</LinearLayout>
+
+

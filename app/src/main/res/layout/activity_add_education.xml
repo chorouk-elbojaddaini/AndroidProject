@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/light_gray"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_bottom_large"
+                >
+
+                <TextView
+                    android:id="@+id/cancelEducation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Cancel"
+                    android:textColor="@color/pumpkin"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-60dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:text="Education"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-140dp"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="16dp"
+                    android:textColor="@color/dark_grey3"
+                    android:text="Save"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education level"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginLeft="10dp"
+                        ></TextView>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="Select Level"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="-7dp"
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="Institute"
+                        android:textSize="14dp"
+                        android:textColorHint="@color/black3"
+
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Field of studies"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginLeft="10dp"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="Select Field of Studies"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="-7dp"
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="location"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginLeft="10dp"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="Select Location"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="-7dp"
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Year of Graduation"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginLeft="10dp"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="2022"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="-7dp"
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Month of Graduation"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginLeft="10dp"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="November"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="-7dp"
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border_bottom"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grade (optional)"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginLeft="10dp"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="Select Grade"
+                        android:textSize="14dp"
+                        android:textColor="@color/black3"
+                        android:layout_marginTop="-7dp"
+
+                        android:fontFamily="@font/robotobold"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="30dp"
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"
+                android:hint="Additional Information"
+                android:textSize="14dp"
+                android:textColor="@color/black3"
+                android:layout_marginTop="-165dp"
+
+                android:fontFamily="@font/robotobold"
+                android:background="@null"
+                android:layout_marginLeft="0dp"
+                ></EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_parent"
+    tools:context=".HomeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Recommended Jobs"
+                android:textColor="@color/darkBlue"
+                android:textSize="26dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_bottom"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="198dp"
+                android:layout_height="150dp"
+                android:src="@drawable/build4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semi"
+                    android:text="Build the Career You Want"
+                    android:textColor="@color/white"
+
+                    android:textSize="26dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand"
+                    android:text="get the advice you need from our career experts "
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryBlue"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="190dp"
+                android:src="@drawable/vector405"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semi"
+                android:text="Your job recommendations"
+                android:textColor="@color/black2"
+                android:textSize="25dp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand"
+                android:text="Tell us what you're looking for to get
+personalised job recommendations"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="55dp"
+                android:layout_marginEnd="16dp">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
