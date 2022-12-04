@@ -61,5 +61,5 @@ public class itemListAdapter extends BaseAdapter{
         itemMnemonicView.setImageResource(RId);
 
         return view;
-}
+    }
 }

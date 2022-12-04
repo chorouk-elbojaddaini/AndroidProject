@@ -22,7 +22,8 @@
                android:layout_marginHorizontal="16dp"
                android:layout_marginTop="16dp"
                android:layout_marginBottom="16dp"
-               android:background="@drawable/searchviewbackg"/>
+               android:background="@drawable/searchviewbackg"
+               android:queryBackground="@android:color/transparent"/>
 
        <TextView
            android:layout_width="wrap_content"
@@ -30,19 +31,18 @@
            android:text="Specializations"
            android:textSize="20dp"
            android:layout_marginLeft="15dp"
+           android:textColor="@color/black2"
 
 
 
            />
-       <GridView
+       <ListView
            android:id="@+id/searlist"
-           android:layout_width="wrap_content"
+           android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:layout_marginStart="15dp"
-           android:layout_marginEnd="15dp"
-           android:numColumns="auto_fit"
+           android:layout_marginBottom="55dp"
            >
 
-       </GridView>
+       </ListView>
    </LinearLayout>
 </FrameLayout>

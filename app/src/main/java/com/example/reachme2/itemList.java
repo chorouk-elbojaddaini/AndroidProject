@@ -9,15 +9,15 @@ public class itemList {
 
 
     //constructor
-    public itemList(String name,String mnemonic,double price) {
-        this.name = name;
-        this.price = price;
-        this.mnemonic = mnemonic;
-    }
-    //methods
-    public String getName() { return name; }
-    public String getMnemonic(){ return mnemonic;}
-    public double getPrice(){ return price;}
+   public itemList(String name,String mnemonic,double price) {
+       this.name = name;
+       this.price = price;
+       this.mnemonic = mnemonic;
+   }
+       //methods
+       public String getName() { return name; }
+       public String getMnemonic(){ return mnemonic;}
+       public double getPrice(){ return price; }
 
 
 }
