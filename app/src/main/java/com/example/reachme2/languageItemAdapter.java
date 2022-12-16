@@ -13,11 +13,11 @@ public class languageItemAdapter extends BaseAdapter {
 
     //fields
     private Context context;
-    private List<LanguageItem> languageItemList;
+    private List<Languages> languageItemList;
     private LayoutInflater inflater;
 
     //constructor
-    public languageItemAdapter(Context context , List<LanguageItem> languageItemList){
+    public languageItemAdapter(Context context , List<Languages> languageItemList){
         this.context  = context;
         this.languageItemList = languageItemList;
         this.inflater = LayoutInflater.from(context);
@@ -29,7 +29,7 @@ public class languageItemAdapter extends BaseAdapter {
     }
 
     @Override
-    public LanguageItem getItem(int position) {
+    public Languages getItem(int position) {
         return languageItemList.get(position);
     }
 
@@ -45,8 +45,8 @@ public class languageItemAdapter extends BaseAdapter {
 
 
         //getInformation about item
-        LanguageItem currentItem = getItem(i);
-        String languageName = currentItem.getLanguageName();
+        Languages currentItem = getItem(i);
+        String languageName = currentItem.getLanguage();
 
         //get item name view
         TextView itemNameView = view.findViewById(R.id.language_item);

@@ -1,5 +1,6 @@
 package com.example.reachme2;
 
+import android.database.Cursor;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,10 +9,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +27,14 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class SearchFragment extends Fragment {
-
+    DBHelper DB;
+    SearchView searchJobInput;
+    TextView specializationTxt;
+    List<itemList> itemLists;
+    itemListAdapter itemAdapter;
+    Cursor itemListsCursor;
+    ImageView imageSearch;
+    TextView notFoundSearch , enterJobText;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -65,33 +80,87 @@ public class SearchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_search, container, false);
+        View v = inflater.inflate(R.layout.fragment_search, container, false);
+        searchJobInput = v.findViewById(R.id.searchJob);
 
+        imageSearch = v.findViewById(R.id.image_search);
+        notFoundSearch = v.findViewById(R.id.notfound_search);
+        enterJobText = v.findViewById(R.id.search_for_domaine);
+        searchJobInput.clearFocus();
+        searchJobInput.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                DB = new DBHelper(getActivity());
+
+
+
+                itemListsCursor = DB.getSerchedJob(s);
+                itemLists = new ArrayList<>();
+                if(itemListsCursor.moveToFirst()){
+                    do {
+                        // on below line we are adding the data from cursor to our array list.
+
+                        itemLists.add(new itemList(
+                                itemListsCursor.getInt(0),
+                                itemListsCursor.getString(1),
+                                itemListsCursor.getString(2),
+                                itemListsCursor.getString(3),
+                                itemListsCursor.getString(4),
+                                itemListsCursor.getString(5),
+                                itemListsCursor.getInt(6)
+
+                        ));
+                    } while (itemListsCursor.moveToNext());
+                }
+
+
+
+                //get list view
+                ListView listview = (ListView) v.findViewById(R.id.searlist);
+                if(!itemLists.isEmpty()){
+                    imageSearch.setVisibility(View.GONE);
+                    notFoundSearch.setVisibility(View.GONE);
+
+
+                    listview.setVisibility(View.VISIBLE);
+                    itemAdapter = new itemListAdapter(getContext(),itemLists);
+                    listview.setAdapter(itemAdapter);
+                }
+                else{
+                    listview.setVisibility(View.GONE);
+                    imageSearch.setVisibility(View.VISIBLE);
+                    notFoundSearch.setVisibility(View.VISIBLE);
+                    enterJobText.setVisibility(View.GONE);
+                }
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                //filterList(newText);
+                return false;
+            }
+        });
         //list of items
-        List<HighTechItem> itemListse = new ArrayList<>();
-        itemListse.add(new HighTechItem("Computer/Information Technology","computer"));
-        itemListse.add(new HighTechItem("Accounting/Finance","finance"));
-        itemListse.add(new HighTechItem("Admin/Human Ressources","admin"));
-        itemListse.add(new HighTechItem("Building/Construction","building"));
-        itemListse.add(new HighTechItem("Arts/Media/Communication","media"));
-        itemListse.add(new HighTechItem("Education/Training","education"));
-        itemListse.add(new HighTechItem("Enginnering","engineering"));
-        itemListse.add(new HighTechItem("Hotel/Restaurant","hotel"));
-        itemListse.add(new HighTechItem("Sciences","sciences"));
-        itemListse.add(new HighTechItem("Healthcare","health"));
-        itemListse.add(new HighTechItem("Sales/Marketing","marketing"));
-        itemListse.add(new HighTechItem("Manufacturing","manufacturing"));
+        //List<HighTechItem> itemListse = new ArrayList<>();
 
 
+        return v;
+    }
+    private void filterList(String text){
+        List<itemList> filteredList = new ArrayList<>();
+        for(itemList item : itemLists){
+            if(item.getDomaine().toLowerCase().contains(text.toLowerCase())){
+                filteredList.add(item);
+            }
 
+        }
+        if(filteredList.isEmpty()){
 
-
-
-
-        //get list view
-        ListView listview = rootView.findViewById(R.id.searlist);
-        listview.setAdapter(new HighTechItemAdapter(getContext(),itemListse));
-
-        return rootView;
+        }
+        else{
+            itemAdapter.setFilteredList(filteredList);
+        }
     }
 }

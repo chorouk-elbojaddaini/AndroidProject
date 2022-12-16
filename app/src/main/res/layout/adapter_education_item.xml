@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_bottom"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                >
+
+                <TextView
+                    android:id="@+id/institute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Ensao"
+                    android:textColor="@color/dark_grey2"
+                    android:textSize="15dp"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/year_of_graduation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoreg"
+                    android:text="2022"
+                    android:textColor="@color/dark_grey2"
+                    android:textSize="14dp"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/field_of_studies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoreg"
+                    android:text="Master's degree in Engineering computer science "
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawableEnd="@drawable/ic_outline_edit_24"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -16,11 +16,13 @@
 
 
         <LinearLayout
+            android:id="@+id/hello"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
 
             <TextView
+                android:id="@+id/recom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
@@ -34,17 +36,21 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/image_two"
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="20dp"
             android:background="@drawable/border"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:visibility="gone">
 
             <ImageView
+                android:id="@+id/image_recomended_jobs"
                 android:layout_width="198dp"
                 android:layout_height="150dp"
-                android:src="@drawable/build4" />
+                android:src="@drawable/build4"
+                />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -76,10 +82,12 @@
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/image_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/secondaryBlue"
+            android:background="@color/white"
             android:orientation="vertical"
+            android:layout_marginLeft="10dp"
             android:visibility="gone">
 
             <ImageView
@@ -123,11 +131,13 @@ personalised job recommendations"
 
             <ListView
                 android:id="@+id/list"
+                android:divider="@null"
+                android:dividerHeight="0dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+
                 android:layout_marginBottom="55dp"
-                android:layout_marginEnd="16dp">
+                >
 
             </ListView>
         </LinearLayout>

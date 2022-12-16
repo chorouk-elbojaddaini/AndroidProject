@@ -28,73 +28,73 @@
             android:layout_marginBottom="30dp"
             >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/border_bottom_large"
-                    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border_bottom_large"
+                >
 
-                    <TextView
-                        android:id="@+id/cancelWorkExp"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/robotobold"
-                        android:text="Cancel"
-                        android:textColor="@color/pumpkin"
-                        android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/cancelWorkExp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Cancel"
+                    android:textColor="@color/pumpkin"
+                    android:textSize="15dp" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-125dp"
-                        android:textSize="20dp"
-                        android:fontFamily="@font/poppins"
-                        android:textColor="@color/darkBlue"
-                        android:text="Work Experience"
-                        />
-                    <TextView
-                        android:id="@+id/saveWorkExperience"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="-140dp"
-                        android:fontFamily="@font/robotobold"
-                        android:textSize="16dp"
-                        android:textColor="@color/dark_grey3"
-                        android:text="save"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@drawable/border_bottom"
-                    >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-125dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/darkBlue"
+                    android:text="Work Experience"
+                    />
+                <TextView
+                    android:id="@+id/saveWorkExperienceUpdate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-140dp"
+                    android:fontFamily="@font/robotobold"
+                    android:textSize="16dp"
+                    android:textColor="@color/dark_grey3"
+                    android:text="Save"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border_bottom"
+                >
 
-                    <EditText
-                        android:id="@+id/job_title_edit_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="45dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="-4dp"
-                        android:background="@null"
-                        android:fontFamily="@font/robotobold"
+                <EditText
+                    android:id="@+id/job_title_edit_text_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-4dp"
+                    android:background="@null"
+                    android:fontFamily="@font/robotobold"
 
-                        android:hint="Job Title"
-                        android:textColor="@color/black3"
-                        android:textSize="14dp"></EditText>
-                </LinearLayout>
+                    android:hint="Job Title"
+                    android:textColor="@color/black3"
+                    android:textSize="14dp"></EditText>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/border_bottom"
                 >
                 <EditText
-                    android:id="@+id/company_name_edit_text"
+                    android:id="@+id/company_name_edit_text_update"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:hint="Company Name"
@@ -139,7 +139,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/specialization_edit_text"
+                    android:id="@+id/specialization_edit_text_update"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:layout_marginLeft="0dp"
@@ -169,7 +169,7 @@
 
                     />
                 <EditText
-                    android:id="@+id/company_industry_edit_text"
+                    android:id="@+id/company_industry_edit_text_update"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:hint="Select Industry"
@@ -200,7 +200,7 @@
 
                     />
                 <EditText
-                    android:id="@+id/position_edit_text"
+                    android:id="@+id/position_edit_text_update"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:hint="Select position level"
@@ -222,56 +222,56 @@
             android:layout_marginBottom="30dp"
             >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal"
-                    android:background="@drawable/border_bottom"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    >
-                    <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
 
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="Start Date"
-                        android:textSize="14dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/black3"
+                    android:layout_marginLeft="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/start_date_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:hint="Select start date"
+                        android:textSize="15dp"
+                        android:textColorHint="@color/dark_grey2"
+                        android:layout_marginTop="-10dp"
+                        android:background="@null"
                         android:fontFamily="@font/robotobold"
-                        android:textColor="@color/black3"
-                        android:layout_marginLeft="10dp"
+
+
                         />
-                    <LinearLayout
+
+                    <TextView
+                        android:id="@+id/start_date_text_view_update"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginRight="10dp"
-                        >
-                        <EditText
-                            android:id="@+id/start_date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
-                            android:hint="Select start date"
-                            android:textSize="15dp"
-                            android:textColorHint="@color/dark_grey2"
-                            android:layout_marginTop="-10dp"
-                            android:background="@null"
-                            android:fontFamily="@font/robotobold"
-
-
-                            />
-                        <TextView
-                            android:id="@+id/start_date_text_view"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/ic_arrow_right"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="-9dp"
-                            android:layout_marginLeft="-2dp"
-                            />
-                    </LinearLayout>
+                        android:layout_marginLeft="-2dp"
+                        android:layout_marginTop="-9dp"
+                        android:layout_marginRight="5dp"
+                        android:drawableStart="@drawable/ic_arrow_right" />
                 </LinearLayout>
-                <LinearLayout
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:orientation="horizontal"
@@ -296,7 +296,7 @@
                     android:layout_marginRight="10dp"
                     >
                     <EditText
-                        android:id="@+id/end_date"
+                        android:id="@+id/end_date_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:hint="Select end date"
@@ -310,7 +310,7 @@
 
                         />
                     <TextView
-                        android:id="@+id/end_date_text_view"
+                        android:id="@+id/end_date_text_view_update"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/ic_arrow_right"
@@ -320,7 +320,7 @@
                         />
                 </LinearLayout>
             </LinearLayout>
-                <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:orientation="horizontal"
@@ -340,11 +340,11 @@
                     />
 
 
-                    <CheckBox android:id="@+id/checkbox_work_here"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:onClick="onCheckboxClicked"/>
+                <CheckBox android:id="@+id/checkbox_work_here_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onCheckboxClicked"/>
 
             </LinearLayout>
 
@@ -357,7 +357,7 @@
             android:layout_marginBottom="30dp"
             >
             <EditText
-                android:id="@+id/job_description"
+                android:id="@+id/job_description_update"
                 android:layout_width="wrap_content"
                 android:layout_height="270dp"
                 android:hint="Job description"

@@ -15,6 +15,7 @@
 
 
            <SearchView
+               android:id="@+id/searchJob"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:queryHint="What kind of job are you looking for ?"
@@ -24,15 +25,37 @@
                android:layout_marginBottom="16dp"
                android:background="@drawable/searchviewbackg"
                android:queryBackground="@android:color/transparent"/>
+       <ImageView
+           android:id="@+id/image_search"
+           android:layout_width="match_parent"
+           android:layout_height="240dp"
+           android:src="@drawable/save2"
+           android:layout_marginTop="100dp"
+
+
+           />
 
        <TextView
-           android:layout_width="wrap_content"
+           android:id="@+id/notfound_search"
+           android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="Specializations"
-           android:textSize="20dp"
-           android:layout_marginLeft="15dp"
+           android:fontFamily="@font/semi"
+           android:text="not found"
            android:textColor="@color/black2"
+           android:textSize="25dp"
+           android:gravity="center"
+           android:visibility="gone"
 
+           />
+       <TextView
+           android:id="@+id/search_for_domaine"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/semi"
+           android:text="Enter the domain you're searching for"
+           android:textColor="@color/black2"
+           android:textSize="25dp"
+           android:gravity="center"
 
 
            />
@@ -41,6 +64,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_marginBottom="55dp"
+           android:visibility="gone"
            >
 
        </ListView>

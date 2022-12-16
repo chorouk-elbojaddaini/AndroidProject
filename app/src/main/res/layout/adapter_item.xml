@@ -3,39 +3,83 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f1f1f1"
 
     >
 
-
-    <ImageView
-        android:id="@+id/item_image"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:src="@drawable/oif"
-        android:layout_marginTop="-25dp"
-        />
-
-    <ImageView
-        android:layout_height="80dp"
-        android:layout_width="122dp"
-        android:src="@drawable/enterprise"
-        android:layout_margin="0dp"
-        android:padding="0dp"
-        />
-    <TextView
-        android:id="@+id/item_name"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Software Principle Enginner"
-        />
-    <TextView
-        android:id="@+id/item_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="23dp"
-        android:text="Software Principle Enginner description description description description"
-        />
+        android:orientation="vertical"
+        android:background="@drawable/bg_item"
+        android:layout_margin="15dp"
 
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/oif" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:src="@drawable/enterprise"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                />
+
+            <TextView
+                android:id="@+id/jobsaving"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="189dp"
+                android:layout_marginTop="-10dp"
+                android:drawableStart="@drawable/ic_baseline_bookmark_border_24"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Software Principle Enginner"
+            android:textColor = "@color/darkBlue"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/robotobold"
+            />
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/dark_grey2"
+            android:fontFamily="@font/robotobold"
+            android:layout_marginLeft="7dp"
+            android:text="Software Principle Enginner description description description description"
+            />
+        <Button
+            android:id="@+id/apply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/border_dark_blue_color"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
         <LinearLayout
-
+            android:id="@+id/work_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -12,6 +12,7 @@
             android:paddingBottom="12dp"
             android:background="@drawable/border_bottom"
             android:layout_marginTop="10dp">
+
             <TextView
                 android:id="@+id/job_title"
                 android:layout_width="wrap_content"
@@ -23,12 +24,11 @@
 
                 />
             <TextView
-                android:id="@+id/job_experience_edit"
+                android:id="@+id/job_experienc_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:drawableEnd="@drawable/ic_outline_edit_24"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="150dp"
 
                 />
         </LinearLayout>

@@ -15,7 +15,10 @@ public class itemListAdapter extends BaseAdapter{
     private Context context;
     private List<itemList> itemLists;
     private LayoutInflater inflater;
-
+    public void setFilteredList(List<itemList> filteredList){
+        this.itemLists = filteredList;
+        notifyDataSetChanged();
+    }
 
     //constructor
     public itemListAdapter(Context context,List<itemList> itemLists){
@@ -47,19 +50,26 @@ public class itemListAdapter extends BaseAdapter{
         itemList currentItem = getItem(position);
         String itemName = currentItem.getName();
         String itemMnemonic = currentItem.getMnemonic();
-        double itemPrice = currentItem.getPrice();
-
+        String itemDescription = currentItem.getDescription();
+        String image = currentItem.getImage();
         //get item name and description view
         TextView itemNameView = view.findViewById(R.id.item_name);
         itemNameView.setText(itemName);
-        TextView itemPriceView = view.findViewById(R.id.item_price);
-        itemPriceView.setText(itemPrice +"$");
+        TextView itemPriceView = view.findViewById(R.id.item_description);
+        itemPriceView.setText(itemDescription);
         //get image
         ImageView itemMnemonicView = view.findViewById(R.id.item_image);
+
         String RessourceName = itemMnemonic;
         int RId = context.getResources().getIdentifier(RessourceName,"drawable",context.getPackageName());
         itemMnemonicView.setImageResource(RId);
 
+        ImageView imageView = view.findViewById(R.id.image_logo);
+
+        String resourceLogoImage = image;
+        int rLogoImage = context.getResources().getIdentifier(resourceLogoImage,"drawable",context.getPackageName());
+        imageView.setImageResource(rLogoImage);
+
         return view;
-    }
+}
 }

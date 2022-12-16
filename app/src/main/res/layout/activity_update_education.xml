@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:id="@+id/add_education_acti"
+
     android:background="@color/light_gray"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@ android:id="@+id/add_education_acti"
                 >
 
                 <TextView
-                    android:id="@+id/cancelEducation"
+                    android:id="@+id/cancel_Education_update"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -58,7 +58,7 @@ android:id="@+id/add_education_acti"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/save_education"
+                    android:id="@+id/save_education_update"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -91,18 +91,17 @@ android:id="@+id/add_education_acti"
                         ></TextView>
 
                     <EditText
-                        android:id="@+id/educationLevel"
+                        android:id="@+id/educationLevel_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
-                        android:hint="Select Level"
-                        android:textSize="14dp"
-                        android:textColor="@color/black3"
-                        android:layout_marginTop="-7dp"
-
-                        android:fontFamily="@font/robotobold"
-                        android:background="@null"
                         android:layout_marginLeft="10dp"
-                        ></EditText>
+                        android:layout_marginTop="-7dp"
+                        android:background="@null"
+                        android:fontFamily="@font/robotobold"
+
+                        android:hint="Select Level"
+                        android:textColor="@color/black3"
+                        android:textSize="14dp"></EditText>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -117,7 +116,7 @@ android:id="@+id/add_education_acti"
                     >
 
                     <EditText
-                        android:id="@+id/institute"
+                        android:id="@+id/institute_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:hint="Institute"
@@ -151,19 +150,19 @@ android:id="@+id/add_education_acti"
                         android:fontFamily="@font/robotobold"
                         android:layout_marginLeft="10dp"
                         ></TextView>
+
                     <EditText
-                        android:id="@+id/field_of_studies_add"
+                        android:id="@+id/field_of_studies_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
-                        android:hint="Select Field of Studies"
-                        android:textSize="14dp"
-                        android:textColor="@color/black3"
-                        android:layout_marginTop="-7dp"
-
-                        android:fontFamily="@font/robotobold"
-                        android:background="@null"
                         android:layout_marginLeft="10dp"
-                        ></EditText>
+                        android:layout_marginTop="-7dp"
+                        android:background="@null"
+                        android:fontFamily="@font/robotobold"
+
+                        android:hint="Select Field of Studies"
+                        android:textColor="@color/black3"
+                        android:textSize="14dp"></EditText>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -186,19 +185,19 @@ android:id="@+id/add_education_acti"
                         android:fontFamily="@font/robotobold"
                         android:layout_marginLeft="10dp"
                         ></TextView>
+
                     <EditText
-                        android:id="@+id/location"
+                        android:id="@+id/location_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
-                        android:hint="Select Location"
-                        android:textSize="14dp"
-                        android:textColor="@color/black3"
-                        android:layout_marginTop="-7dp"
-
-                        android:fontFamily="@font/robotobold"
-                        android:background="@null"
                         android:layout_marginLeft="10dp"
-                        ></EditText>
+                        android:layout_marginTop="-7dp"
+                        android:background="@null"
+                        android:fontFamily="@font/robotobold"
+
+                        android:hint="Select Location"
+                        android:textColor="@color/black3"
+                        android:textSize="14dp"></EditText>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -230,7 +229,7 @@ android:id="@+id/add_education_acti"
                         android:layout_marginLeft="10dp"
                         ></TextView>
                     <EditText
-                        android:id="@+id/year_of_graduation"
+                        android:id="@+id/year_of_graduation_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:hint="2022"
@@ -265,7 +264,7 @@ android:id="@+id/add_education_acti"
                         android:layout_marginLeft="10dp"
                         ></TextView>
                     <EditText
-                        android:id="@+id/month_of_graduation"
+                        android:id="@+id/month_of_graduation_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:hint="November"
@@ -300,7 +299,7 @@ android:id="@+id/add_education_acti"
                         android:layout_marginLeft="10dp"
                         ></TextView>
                     <EditText
-                        android:id="@+id/grade"
+                        android:id="@+id/grade_update"
                         android:layout_width="wrap_content"
                         android:layout_height="45dp"
                         android:hint="Select Grade"
@@ -323,7 +322,7 @@ android:id="@+id/add_education_acti"
             android:layout_marginBottom="30dp"
             >
             <EditText
-                android:id="@+id/additional_information"
+                android:id="@+id/additional_information_update"
                 android:layout_width="wrap_content"
                 android:layout_height="360dp"
                 android:hint="Additional Information"

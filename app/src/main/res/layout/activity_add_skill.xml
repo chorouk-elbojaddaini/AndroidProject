@@ -52,6 +52,7 @@
             android:orientation="vertical"
             >
             <EditText
+                android:id="@+id/skill_name"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginLeft="10dp"
@@ -78,6 +79,7 @@
                     ></TextView>
 
                 <EditText
+                    android:id="@+id/proficiency"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:hint="Select Specialization"
@@ -94,6 +96,7 @@
 
         </LinearLayout>
         <TextView
+            android:id="@+id/addSkillBtn"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/light_gray"
@@ -103,14 +106,6 @@
             android:textColor="@color/darkBlue"
             android:textSize="17dp"
             android:text="Add"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/light_gray"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/robotobold"
-            android:textColor="@color/dark_grey2"
-            android:text="Maximum number of skills:10"/>
+
     </LinearLayout>
 </LinearLayout>

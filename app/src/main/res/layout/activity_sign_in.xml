@@ -100,10 +100,10 @@
 
         </Button>
         <TextView
-            android:id="@+id/forget"
+            android:id="@+id/register"
             android:layout_width="320dp"
             android:layout_height="60dp"
-            android:text = "Forget password ?"
+            android:text ="Don't have an account?"
             android:fontFamily="@font/regular"
             android:layout_marginTop="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -112,20 +112,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/darkBlue"
             ></TextView>
-        <TextView
-            android:id="@+id/register"
-            android:layout_width="320dp"
-            android:layout_height="60dp"
-            android:text = "Don't have an account?"
-            android:fontFamily="@font/regular"
-            android:layout_marginTop="-25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/darkBlue"
 
-            ></TextView>
     </LinearLayout>
     <ProgressBar
         android:id="@+id/progressBar"
